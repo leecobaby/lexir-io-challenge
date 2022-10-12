@@ -5,7 +5,6 @@ import IconFacebook from './icon-facebook.svg'
 import IconInstagram from './icon-instagram.svg'
 import IconLinkedin from './icon-linkedin.svg'
 import IconMedium from './icon-medium.svg'
-import Img8093 from './IMG_8093.jpg'
 
 export {
   IconAvatar,
@@ -14,6 +13,5 @@ export {
   IconFacebook,
   IconInstagram,
   IconLinkedin,
-  IconMedium,
-  Img8093
+  IconMedium
 }

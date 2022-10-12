@@ -1,5 +1,5 @@
 export * from './Footer'
 export * from './Header'
-export * from './Layout'
 export * from './Product'
 export * from './Button'
+export * from './Layout'

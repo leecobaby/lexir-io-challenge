@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { IconAvatar, IconBasket } from '@assets/index'
 
 export const navs = [

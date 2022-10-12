@@ -1,0 +1,44 @@
+@tailwind components;
+
+@layer components {
+  .btn-primary {
+    @apply block rounded-[4px] py-3 bg-primary-700 text-base  text-white font-bold text-center;
+  }
+
+  .btn-primary:hover {
+    @apply bg-primary-900 font-medium;
+  }
+
+  /**
+    * @description
+    *   stylelint-disable-next-line max-line-length
+    *   https://stackoverflow.com/questions/556153/inline-elements-shifting-when-made-bold-on-hover
+    */
+  .btn-primary::before {
+    @apply block h-0 font-bold overflow-hidden invisible;
+
+    content: attr(data-text);
+  }
+
+  .btn-primary:active {
+    @apply bg-primary-500 font-medium;
+  }
+
+  .btn-primary:disabled {
+    @apply bg-secondary-700 font-medium text-secondary-900;
+  }
+
+  .btn-size-default,
+  .btn-size-small, {
+    @apply px-[38px];
+  }
+
+  .btn-size-medium, {
+    @apply px-36;
+  }
+
+  .bin-size-full,
+  .btn-size-large, {
+    @apply w-full;
+  }
+}

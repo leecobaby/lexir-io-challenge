@@ -13,6 +13,7 @@ module.exports = {
         ],
       },
     ],
+    "max-line-length": [128, { ignore: ["non-comments"] }],
     "declaration-block-trailing-semicolon": null,
     "no-descending-specificity": null,
   },

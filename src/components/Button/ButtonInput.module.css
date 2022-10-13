@@ -2,7 +2,7 @@
 
 @layer components {
   .btn-primary {
-    @apply flex justify-center items-center rounded-[4px] py-3 bg-primary-700 text-base  text-white font-bold text-center;
+    @apply flex justify-between items-center rounded-[4px] py-3 bg-primary-700 text-base  text-white font-bold;
   }
 
   .btn-primary:hover {
@@ -19,15 +19,15 @@
 
   .btn-size-default,
   .btn-size-small, {
-    @apply px-[38px];
+    @apply px-5 space-x-2;
   }
 
   .btn-size-medium, {
-    @apply px-36;
+    @apply px-9 space-x-36;
   }
 
   .btn-size-full,
   .btn-size-large, {
-    @apply w-full;
+    @apply w-full px-9;
   }
 }

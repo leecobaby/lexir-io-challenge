@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        /** My computer doesn't have the character Lato */
+        /** Configure Custom Fonts */
         sans: ["Lato", ...defaultTheme.fontFamily.sans],
         serif: ["Source Serif Pro", ...defaultTheme.fontFamily.serif],
       },

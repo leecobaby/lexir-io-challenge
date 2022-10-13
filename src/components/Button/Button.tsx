@@ -1,5 +1,6 @@
 import { FC } from 'react'
-import styles from './Button.module.css'
+import stylesBtn from './Button.module.css'
+import stylesBtnInput from './ButtonInput.module.css'
 
 interface PropsType {
   /** default = small , large = full */
@@ -14,20 +15,18 @@ interface PropsType {
 export const Button: FC<PropsType> = ({
   size = 'default',
   type = 'button',
-  model = 'default',
   onClick,
+  model,
   disabled,
   children
 }) => {
+  let className =
+    model === 'input'
+      ? `${stylesBtnInput['btn-primary']} ${stylesBtnInput['btn-size-' + size]}`
+      : `${stylesBtn['btn-primary']} ${stylesBtn['btn-size-' + size]}`
+
   return (
-    <button
-      className={`${styles['btn-primary']} ${styles['btn-size-' + size]} ${
-        styles['btn-model-' + model]
-      }`}
-      type={type}
-      disabled={disabled}
-      data-text={children}
-    >
+    <button className={className} type={type} disabled={disabled}>
       {children}
     </button>
   )

@@ -47,6 +47,24 @@
   }
 }
 
+/**
+  * @description
+  *  prevent inline elements shifting use for {font-weight: 700}
+  *  https://stackoverflow.com/questions/556153/inline-elements-shifting-when-made-bold-on-hover
+  */
+.prevent-move {
+  display: block;
+}
+
+.prevent-move::before {
+  display: block;
+  height: 0;
+  font-weight: 700;
+  overflow: hidden;
+  visibility: hidden;
+  content: attr(data-text);
+}
+
 /* @media (prefers-color-scheme: dark) {
   .card,
   .footer {

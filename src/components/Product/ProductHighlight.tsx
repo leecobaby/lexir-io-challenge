@@ -5,7 +5,7 @@ import styles from '@styles/Home.module.css'
 import { IconPlus, IconMinus, IconBelgium } from '@assets/index'
 import Pic from '@assets/./packshot-kiss-my-rhubarb.png'
 import { useState } from 'react'
-
+import { ProductDetail } from "./ProductDetail";
 import NP from 'number-precision'
 
 export const ProductHighlight: NextPage = () => {

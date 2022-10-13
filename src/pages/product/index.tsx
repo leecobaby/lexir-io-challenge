@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import styles from '@styles/Home.module.css'
-import { ProductHighlight } from '@components/index'
+import { ProductHighlight, ProductDetail } from '@components/index'
 
 const Product: NextPage = () => {
   return (
@@ -10,6 +10,7 @@ const Product: NextPage = () => {
       </h1>
 
       <ProductHighlight />
+      <ProductDetail />
     </>
   )
 }
